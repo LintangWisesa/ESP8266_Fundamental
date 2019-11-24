@@ -33,7 +33,9 @@ void handle_OnConnect(){
 }
 
 String web(int pot){
-  String web1 = "<h1>Hello World!</h1><b>Nilai potensio: " + String(pot) + "</b>";
+  String web1 = "<head><meta http-equiv=\"refresh\" content=\"1\"/></head>";
+  web1 += "<body><h1>Hello World!</h1><b>Nilai potensio: ";
+  web1 += String(pot) + "</b></body>";
   return web1;
 }
 
